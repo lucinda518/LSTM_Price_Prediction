@@ -1,8 +1,1 @@
-Git is a distributed version control system.
-Git is free software distributed under the GPL.
-Git has a mutable index called stage.
-<<<<<<< HEAD
-Creating a new branch is quick and simple.
-=======
-Creating a new branch is quick and simple.
->>>>>>> feature1
+This project aims to predict the funds’ prices based on LSTM model. For every 50 days time window, I generate five days’ predictions. The standardization procedure is as follows: from day i to day i+50, I standardize prices to make every time window of first day to become 0 and the following days are standardized as the return relative to the first day. For each time window, I use day 1’s observed price to day 50’s observed price to predict day 51’s price. Then, I use day 2’s observed price to day 50’s observed price combined with day 51’s predicted price to predict the day 52’s price, and so on.
